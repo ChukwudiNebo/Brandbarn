@@ -20,6 +20,13 @@ app.use(express.json({ extended: false }));
 
 
 //Define Routes
+app.get('/', (req, res, next) =>
+{
+    res.status(200).json({
+        status: 'success',
+        data: {name: 'success'}
+    })
+})
 app.use('/api/users', require('./route/api/user'));
 app.use('/api/auth', require('./route/api/auth'));
 // app.use('/api/profile', require('./route/api/profile'));
