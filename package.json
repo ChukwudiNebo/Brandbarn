@@ -1,0 +1,32 @@
+{
+  "name": "another-two",
+  "version": "1.0.0",
+  "description": "Developers's Diary",
+  "main": "server.js",
+  "author": "Chukwudi Nebo",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.0",
+    "react-router-dom": "^6.3.0",
+    "request": "^2.88.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.16"
+  }
+}
