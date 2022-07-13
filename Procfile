@@ -1,1 +1,1 @@
-web: npm run dev ./server.js
+web: npm run dev
