@@ -1,1 +1,1 @@
-web: node server
+web: react start
